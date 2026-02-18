@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To My Dear Thea</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #fbeaff, #ffe6f0);
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .envelope-container {
+        text-align: center;
+    }
+
+    .envelope {
+        font-size: 100px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    .envelope:hover {
+        transform: scale(1.1);
+    }
+
+    .letter-container {
+        display: none;
+        background: white;
+        width: 90%;
+        max-width: 750px;
+        padding: 50px;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        position: relative;
+        animation: fadeIn 1s ease;
+    }
+
+    h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: 32px;
+        margin-bottom: 30px;
+        color: #c94f7c;
+        text-align: center;
+    }
+
+    p {
+        line-height: 1.8;
+        font-size: 16px;
+        color: #444;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .signature {
+        margin-top: 40px;
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        color: #c94f7c;
+    }
+
+    .gif-bottom-right {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+    }
+
+    iframe {
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .heart {
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        font-size: 30px;
+        animation: pulse 1.5s infinite;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.2); }
+        100% { transform: scale(1); }
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 12px;
+        color: #aaa;
+    }
+</style>
+</head>
+<body>
+
+<div class="envelope-container">
+    <!-- Envelope Icon -->
+    <div class="envelope" onclick="openLetter()">✉️</div>
+    <p>For you my Thea 💌</p>
+</div>
+
+<!-- Letter Container -->
+<div class="letter-container" id="letter">
+    <div class="heart">💖</div>
+    <h1>To My Dear Thea</h1>
+
+    <p>I'm not really one for writing letters and yet here I am. Pulled by my affection and feelings for you that had driven me to write. I know we are both busy pursuing our dreams but you always linger at the back of my mind.</p>
+
+    <p>Thea, you are like a favorite bookmarked page in a novel I barely have time to read and yet you are the one I keep looking forward to the moment my day ends. I know I do not have many free hours to spend, but no matter how chaotic or hectic life gets, you are the story I long to read, the one I could never skip.</p>
+
+    <p>Above all, I am so proud of you for passing the boards and becoming a nurse. I love how you are still pursuing your dreams despite the uncertainties. I am always rooting for you. I know you are used to being independent, but remember you will never have to face anything alone. No matter your highs or lows I will always be your unwavering reader</p>
+
+    <p>I will always be here to support you every step of the way because I want you to be happy and succeed. Ironic as it may sound, meeting and getting to know you when we did, in the midst of our busy schedules, feels like flipping the pages to the right chapter at the right time.</p>
+
+    <p>And honestly, I do not know what the next pages or chapters will look like. But this I know — whether the days are good or bad, I want to keep reading and finish this entire book by your side. And with every page of you that I turn, I discover more of you and somehow you are even more beautiful than before.</p>
+
+    <div class="signature">
+        Love,<br>
+        Your Adri
+    </div>
+
+    <div class="gif-bottom-right">
+        <iframe 
+            src="https://tenor.com/embed/27390913"
+            width="200"
+            height="200"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="footer">
+        Made with love 💕
+    </div>
+</div>
+
+<script>
+    function openLetter() {
+        document.getElementById('letter').style.display = 'block';
+        document.querySelector('.envelope-container').style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
